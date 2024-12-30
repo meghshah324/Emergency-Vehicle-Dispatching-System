@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearest Emergency Vehicle Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nearest Emergency Vehicle Finder</h1>
+        <p>Enter your Zipcode and select the type of emergency vehicle you need.</p>
+
+        <!-- Input Fields for Zipcode and Vehicle Type -->
+        <label for="zipcodeInput">Zipcode:</label>
+        <input type="text" id="zipcodeInput" placeholder="Enter Zipcode" required>
+
+        <label for="vehicleTypeInput">Vehicle Type:</label>
+        <select id="vehicleTypeInput">
+            <option value="ambulance">Ambulance</option>
+            <option value="firebrigade">Fire Brigade</option>
+            <option value="police">Police</option>
+        </select>
+
+        <button id="findButton" >Find Nearest Station</button>
+        
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

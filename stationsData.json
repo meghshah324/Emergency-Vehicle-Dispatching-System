@@ -1,0 +1,58 @@
+{
+  "stations": [
+    {
+      "id": "1",
+      "zipcode": "101",
+      "vehicles": [
+        "police"
+      ]
+    },
+    {
+      "id": "2",
+      "zipcode": "102",
+      "vehicles": [
+        "police",
+        "ambulance"
+      ]
+    },
+    {
+      "id": "3",
+      "zipcode": "103",
+      "vehicles": [
+        "ambulance"
+      ]
+    },
+    {
+      "id": "4",
+      "zipcode": "104",
+      "vehicles": [
+        "firebeigade"
+      ]
+    },
+    {
+      "id": "5",
+      "zipcode": "105",
+      "vehicles": [
+        "firebrigade",
+        "police"
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "zipcode1": "101",
+      "zipcode2": "102",
+      "distance": 10
+    },
+    {
+      "zipcode1": "102",
+      "zipcode2": "103",
+      "distance": 2
+    },
+    {
+      "zipcode1": "101",
+      "zipcode2": "103",
+      "distance": 9
+    }
+  ]
+}

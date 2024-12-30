@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station Data Input</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Station Data Management</h1>
+        <div class="form-section">
+            <!-- Add Station Column -->
+            <div class="form-card">
+                <h2 class="form-title station-title">Add Station</h2>
+                <form id="stationForm">
+                    <label for="stationId" class="label">Station ID:</label>
+                    <input type="text" id="stationId" class="input" required>
+                    
+                    <label for="stationZipcode" class="label">Zipcode:</label>
+                    <input type="text" id="stationZipcode" class="input" required>
+
+                    <label for="vehicles" class="label">Vehicles Available (comma separated):</label>
+                    <input type="text" id="vehicles" class="input" placeholder="ambulance,police" required>
+                    
+                    <button type="button" class="button add-button" onclick="addStation()">Add Station</button>
+                </form>
+            </div>
+
+            <!-- Add Distance Column -->
+            <div class="form-card">
+                <h2 class="form-title distance-title">Add Distance</h2>
+                <form id="distanceForm">
+                    <label for="zipcode1" class="label">From Zipcode:</label>
+                    <input type="text" id="zipcode1" class="input" required>
+
+                    <label for="zipcode2" class="label">To Zipcode:</label>
+                    <input type="text" id="zipcode2" class="input" required>
+
+                    <label for="distance" class="label">Distance (km):</label>
+                    <input type="number" id="distance" class="input" required>
+                    
+                    <button type="button" class="button add-button" onclick="addDistance()">Add Distance</button>
+                </form>
+            </div>
+
+            <!-- Save Data Column -->
+            <div class="form-card">
+                <h2 class="form-title save-title">Save Data</h2>
+                <button onclick="saveData()" class="button save-button" id="save">Save Data to Server</button>
+                <pre id="output" class="output"></pre>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

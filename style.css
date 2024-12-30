@@ -1,0 +1,94 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Dark Theme Background */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #f5a623;
+}
+
+/* Text */
+p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #b3b3b3;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #a5a5a5;
+    font-size: 1em;
+}
+
+/* Input Fields */
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    font-size: 1em;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+select {
+    appearance: none;
+    background-color: #2a2a2a;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5a623;
+    color: #121212;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e09017;
+}
+
+/* Output */
+#output {
+    margin-top: 20px;
+    color: #f5a623;
+    font-size: 1.1em;
+}
